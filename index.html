@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="css/Style.css">
+</head>
+<body>
+	<div class="nav-bar">
+		<div class="bar"></div>
+		<span class="logo">Docs.</span>
+		<span class="item item-active">Tomcat</span>
+		<span class="item">Jetty</span>
+		<span class="item">Undertow</span>
+		<span class="item">Ant</span>
+		<span class="item">Maven</span>
+		<span class="item">Graddle</span>
+		<span class="item">Java Testing</span>
+		<span class="item">Java Logging</span>
+		<span class="item">JavaScript</span>
+		<span class="item">Design Pattern JavaEE</span>
+		<span class="item">Web Services</span>
+	</div>
+	<div class="container">
+		<div class="left-side">
+			<div class="table-of-content">
+				<div class="title">table des matières</div>
+				<div>
+					<span class="element">Introduction</span>
+					<span class="element">Setup</span>
+					<span class="element">First web application</span>
+					<span class="element">Deployer</span>
+					<span class="element">Manager</span>
+					<span class="element">Host Manager</span>
+					<span class="element">Realms and Access Control</span>
+					<span class="element">Security Manager</span>
+					<span class="element">JNDI Resources</span>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div>
+				<span class="title">Introduction</span>
+				<span class="text">
+					For administrators and web developers alike, there are some important bits of information you should familiarize yourself with before starting out. This document serves as a brief introduction to some of the concepts and terminology behind the Tomcat container. As well, where to go when you need help.
+				</span>
+				<span class="title">Terminology</span>
+				<span class="text">
+					In the course of reading these documents, you will run across a number of terms; some specific to Tomcat, and others defined by the Servlet and JSP specifications.
+
+					Context - In a nutshell, a Context is a web application.
+					That is it. If you find any more terms we need to add to this section, please do let us know.
+				</span>
+				<span class="title">Directories and Files</span>
+				<span class="text">
+					Throughout the docs, you'll notice there are numerous references to <b>$CATALINA_HOME</b>. This represents the root of your Tomcat installation. When we say, "This information can be found in your <b>$CATALINA_HOME/README.txt</b> file" we mean to look at the <b>README.txt</b> file at the root of your Tomcat install. Optionally, Tomcat may be configured for multiple instances by defining <b>$CATALINA_BASE</b> for each instance. If multiple instances are not configured, <b>$CATALINA_BASE</b> is the same as <b>$CATALINA_HOME</b>.
+
+					These are some of the key tomcat directories:
+					<ul>
+					<li><b>/bin</b>- Startup, shutdown, and other scripts. The *.sh files (for Unix systems) are functional duplicates of the *.bat files (for Windows systems). Since the Win32 command-line lacks certain functionality, there are some additional files in here.</li>
+					<li><b>/conf</b> - Configuration files and related DTDs. The most important file in here is server.xml. It is the main configuration file for the container.</li>
+					<li><b>/logs</b> - Log files are here by default.</li>
+					<li><b>/webapps</b> - This is where your webapps go.</li>
+					</ul>
+				</span>
+			</div>
+		</div>
+		<div class="right-side"></div>
+	</div>
+</body>
+</html>
